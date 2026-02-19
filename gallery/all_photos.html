@@ -2,55 +2,50 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>写真ギャラリー</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | 豊福雅哉</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header class="site-header">
-        <h1>写真ギャラリー</h1>
-    </header>
+<body style="background: #f4f4f2;">
 
-    <main class="container">
-        <section class="photo-gallery">
-            <h2>作例</h2>
-            <div class="gallery-grid">
-                <figure class="gallery-item">
-                    <img src="photo1.jpg" alt="作品名1" class="gallery-img">
-                    <figcaption>作品1</figcaption>
-                </figure>
-                <figure class="gallery-item">
-                    <img src="photo2.jpg" alt="作品名2" class="gallery-img">
-                    <figcaption>作品2</figcaption>
-                </figure>
-                <figure class="gallery-item">
-                    <img src="photo3.jpg" alt="作品名3" class="gallery-img">
-                    <figcaption>作品3</figcaption>
-                </figure>
-                <figure class="gallery-item">
-                    <img src="photo4.jpg" alt="作品名4" class="gallery-img">
-                    <figcaption>作品4</figcaption>
-                </figure>
-                <figure class="gallery-item">
-                    <img src="photo5.jpg" alt="作品名5" class="gallery-img">
-                    <figcaption>作品5</figcaption>
-                </figure>
-                <figure class="gallery-item">
-                    <img src="photo6.jpg" alt="作品名6" class="gallery-img">
-                    <figcaption>作品6</figcaption>
-                </figure>
-            </div>
-            <div class="link-buttons" style="margin-top: 20px;">
-                <a href="../index.html" class="button">トップページに戻る</a>
-            </div>
-        </section>
+    <nav class="navbar">
+        <div class="nav-logo">Masaya Toyofuku</div>
+        <ul class="nav-links"><li><a href="../index.html">Home</a></li></ul>
+    </nav>
+
+    <main style="padding: 120px 5% 80px; max-width: 1200px; margin: 0 auto;">
+        <h2 style="margin-bottom: 60px; font-family: 'Noto Serif JP', serif; text-align: center;">Photography Gallery</h2>
+        
+        <div class="gallery-page-grid">
+            <div class="hover-item"><img src="photo1.jpg"><div class="hover-mask"><h3>飛行機</h3></div></div>
+            <div class="hover-item"><img src="photo2.jpg"><div class="hover-mask"><h3>桜</h3></div></div>
+            <div class="hover-item"><img src="photo3.jpg"><div class="hover-mask"><h3>夕日</h3></div></div>
+            <div class="hover-item"><img src="photo4.jpg"><div class="hover-mask"><h3>ヒヨドリ</h3></div></div>
+            <div class="hover-item"><img src="photo5.jpg"><div class="hover-mask"><h3>コサギ</h3></div></div>
+            <div class="hover-item"><img src="photo6.jpg"><div class="hover-mask"><h3>カルガモ</h3></div></div>
+            <div class="hover-item"><img src="photo7.jpg"><div class="hover-mask"><h3>蓮</h3></div></div>
+            <div class="hover-item"><img src="photo8.jpg"><div class="hover-mask"><h3>カイツブリ</h3></div></div>
+            <div class="hover-item"><img src="photo9.jpg"><div class="hover-mask"><h3>カワウ</h3></div></div>
+            <div class="hover-item"><img src="photo10.jpg"><div class="hover-mask"><h3>メジロ</h3></div></div>
+            <div class="hover-item"><img src="photo11.jpg"><div class="hover-mask"><h3>ヤマガラ</h3></div></div>
+            <div class="hover-item"><img src="photo12.jpg"><div class="hover-mask"><h3>ユリカモメ</h3></div></div>
+        </div>
+
+        <div class="center-btn" style="text-align: center; margin-top: 60px;">
+            <a href="../index.html" class="button">Back to Home</a>
+        </div>
     </main>
 
     <footer class="site-footer">
-        <p>&copy; 2025 My Portfolio</p>
+        <div class="footer-inner">
+            <p class="copyright">&copy; 2026 Masaya Toyofuku Portfolio</p>
+            <div class="disclaimer-box">
+                <p class="disclaimer">【無断転載禁止】</p>
+                <p class="disclaimer">掲載されている全ての画像・文章の無断転載、複製、配布を固く禁じます。</p>
+            </div>
+        </div>
     </footer>
-
+    
+    <script src="../script.js"></script>
 </body>
 </html>
