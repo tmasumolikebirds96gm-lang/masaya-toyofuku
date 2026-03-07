@@ -3,13 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="google-site-verification" content="f1pRUgA1p1dXFI60_zoCpg1pTOdd3Ve6hD-RL-po7IY" />
-    <title>豊福雅哉 | ポートフォリオ Wildlife & Bird Photography </title>
-    <meta name="description" content="野生動物・野鳥・風景写真の掲載ポートフォリオサイト。都市部の野鳥や身近な生き物たちの写真、観察記録、アーカイブを公開しています。">
+    <title>豊福雅哉 | Wildlife & Bird Photography - 公式サイト</title>
+    <meta name="description" content="野生動物・野鳥写真家 豊福雅哉の公式サイト。都市部の野鳥や身近な生き物たちの写真、観察記録、アーカイブを公開しています。">
     <meta name="keywords" content="豊福雅哉, Masaya Toyofuku, 野鳥, 野生動物, 写真家, ポートフォリオ, 観察記録, 都市の鳥">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+    
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 40px auto;
+            max-width: 1000px;/
+            justify-content: center;
+        }
+
+        .gallery-item {
+            width: 100%;
+            aspect-ratio: 3 / 2;
+            overflow: hidden;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #eee;
+        }
+
+        .top-gallery-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .top-gallery-img:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 600px) {
+            .gallery-grid {
+                grid-template-columns: repeat(1, 1fr);
+                padding: 0 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
@@ -32,22 +73,17 @@
     </header>
 
     <main class="container">
-    <section id="profile" class="section-box scroll-reveal">
-        <div class="profile-card">
-            <img src="profile.jpg" alt="豊福雅哉" class="profile-img">
-            <div class="profile-text">
-                <h2>Profile</h2>
-                <p>都市部に生きる身近な野鳥や生き物たちを中心に撮影・観察・記録を行っています。</p>
-                <p>彼らが見せる一瞬の表情や生命の魅力を、写真を通じて感じていただければ幸いです。</p>
-                <hr> <p>eco検定</p>
-                <p>グリーンセイバーネイチャー検定</p>
-                <p>生物分類三級</p>
-                <p>ビオトープ管理士二級</p>
-                <p>JSCAパドリングテスト/パドル3</p>
+        <section id="profile" class="section-box scroll-reveal">
+            <div class="profile-card">
+                <img src="profile.jpg" alt="豊福雅哉" class="profile-img">
+                <div class="profile-text">
+                    <h2>Profile</h2>
+                    <p>都市部に生きる身近な野鳥や生き物たちを中心に撮影・観察・記録を行っています。</p>
+                    <p>彼らが見せる一瞬の表情や生命の魅力を、写真を通じて感じていただければ幸いです。</p>
+                    <p style="font-size: 0.9em; color: #777; margin-top: 15px;">本サイトは、HTML/CSS/JSで構築・運営しています。</p>
+                </div>
             </div>
-        </div>
-    </section>
-</main>
+        </section>
 
         <section id="blog" class="section-box scroll-reveal">
             <h2>Latest Update</h2>
