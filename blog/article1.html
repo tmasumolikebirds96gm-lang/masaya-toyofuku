@@ -4,16 +4,65 @@
     <meta charset="UTF-8">
     <title>お知らせ | 豊福雅哉</title>
     <link rel="stylesheet" href="../style.css">
+    <style>
+        /* このページ専用のスタイル調整 */
+        .news-list {
+            margin-top: 20px;
+        }
+        .news-item {
+            padding: 24px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+        }
+        .post-date {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .news-content {
+            line-height: 1.8;
+            color: #333;
+            margin: 0;
+        }
+        .self-build-note {
+            background: #f9f9f9;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 0.85em;
+            color: #777;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
     <main class="container">
         <article style="background: #fff; padding: 40px; border-radius: 15px;">
             <h1>お知らせ</h1>
-            <p class="post-date">公開日：2025年9月11日</p>
             <hr>
-            <p>お知らせ等があればこちらに記載させていただきます。</p>
+
+            <div class="news-list">
+
+                <section class="news-item">
+                    <p class="post-date">2025年9月1日</p>
+                    <div class="news-content">
+                        本サイトは、HTML/CSS/JSで構築・運営しています。
+                    </div>
+                </section>
+                <section class="news-item">
+                    <p class="post-date">2017年12月31日</p>
+                    <div class="news-content">
+                        お知らせ等があればこちらに記載させていただきます。
+                    </div>
+                </section>
+
+            </div>
+
         </article>
-        <div class="center-btn">
+
+        <div class="center-btn" style="margin-top: 30px; text-align: center;">
             <a href="../index.html" class="button">トップページに戻る</a>
         </div>
     </main>
