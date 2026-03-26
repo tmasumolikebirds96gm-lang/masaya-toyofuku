@@ -1,1 +1,0 @@
-import"./all_photos.astro_astro_type_script_index_0_lang.pnt6j0k3.js";const t=()=>{const o=document.documentElement.scrollTop,n=document.documentElement.scrollHeight-document.documentElement.clientHeight,l=o/n*100,e=document.getElementById("scroll-progress");e&&(e.style.width=l+"%")};window.addEventListener("scroll",t);window.addEventListener("load",t);
